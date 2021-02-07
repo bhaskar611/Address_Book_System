@@ -5,5 +5,6 @@ public class AddressBookMainClass {
 		AddressBook addressBook = new AddressBook();
 	System.out.println("*******WELCOME TO ADDRESS BOOK PROGRAM*******");
 	addressBook.addPerson();
+	addressBook.editPerson();
 }
 }
