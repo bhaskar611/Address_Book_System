@@ -103,4 +103,41 @@ public class AddressBook implements AddressBookInterface{
 				  	}
 		      }
  	  	}
+ 	public void deletePerson() {
+
+		System.out.println("Enter person First Name to delete details");
+		Scanner remove = new Scanner(System.in);
+		boolean delete = false;
+		String firstName = remove.nextLine();
+
+				for (int i=0; i<personData.size(); i++) {
+					String name = personData.get(i).firstName;
+						if (firstName.equals(name)) {
+							delete = true;	
+								while (delete == true) {
+									System.out.println("**Warning: Are you sure you want to delete** \n"
+											   			+"Enter 1 for yes\n"
+											   			+ "Enter 2 for Quit");
+									int entry = remove.nextInt();	
+											switch (entry) {
+												case 1:
+													personData.remove(i);
+													System.out.println("Person details deleted");
+												 	break;
+												case 2:
+													delete = false;
+													break;
+												default:
+													System.out.println("Invalid Entry");
+													break;
+											}
+											break;
+								    }
+								
+							}		
+					   else {		
+						   System.out.println("Record Not Found");		
+					   }		
+				   }
+ 			}
 }
