@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class AddressBook implements AddressBookInterface{
 	public static ArrayList<ContactPerson> personData = new ArrayList<ContactPerson>();
-
+// Add person details
  	public void addPerson() {
  		
 	    Scanner data = new Scanner(System.in);
@@ -28,6 +28,7 @@ public class AddressBook implements AddressBookInterface{
 		System.out.println("Array of Person : "+personData);
 
 	}
+// Edit Person details
  	public void editPerson() {
 
 		System.out.println("Enter person First Name to Edit person details");
@@ -103,6 +104,7 @@ public class AddressBook implements AddressBookInterface{
 				  	}
 		      }
  	  	}
+ // Delete Person Details	
  	public void deletePerson() {
 
 		System.out.println("Enter person First Name to delete details");

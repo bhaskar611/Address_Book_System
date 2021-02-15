@@ -24,6 +24,7 @@ public class ContactPerson {
 		}
 
 		public String getFirstName() {
+			
 			return firstName;
 		}
 
